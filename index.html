@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Programming Dictionary</title>
+</head>
+<body>
+    <h1>English Programming Dictionary</h1>
+    <form method="POST">
+        <input type="text" name="word" placeholder="Enter a word">
+        <button type="submit">Search</button>
+    </form>
+    {% if meaning %}
+        <p><strong>Result:</strong> {{ meaning }}</p >
+    {% endif %}
+</body>
+</html>
